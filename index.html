@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Slap Game Encapsulated</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body id="character1">
+
+  <header class="container-fluid mt-3">
+    <div class="row">
+      <div class="col d-flex justify-content-center">
+        <h1 id="target-name">Lucy van Pelt vs Charlie Brown</h1>
+      </div>
+    </div>
+    <main id="template">
+
+
+
+    </main>
+    <div class="row">
+      <div class="col d-flex justify-content-center attacks">
+        <button onclick="app.controllers.charController.slap()" type="button" class="btn btn-danger btn1">SLAP
+          -1</button>
+        <button onclick=app.controllers.charController.punch() type="button" class="btn btn-danger btn2">PUNCH
+          -5</button>
+        <button onclick=app.controllers.charController.kick() type="button" class="btn btn-danger btn3">KICK
+          -10</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col mb-2 mt-4 d-flex justify-content-center text-center">
+        <h3>Add a Modifier:</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div id="items" class="col d-flex justify-content-center mt-2 btn-toolbar">
+        <button onclick="giveFootball()" type="button" class="btn btn-secondary btn4">Yank Football -10</button>
+        <button onclick="kite()" type="button" class="btn btn-success btn5">Give Kite +5</button>
+        <button onclick="giveLucy()" type="button" class="btn btn-secondary btn6">Lucy's Deception -5</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col d-flex justify-content-center my-2">
+        <button onclick="reset()" type="button" class=" btn btn-warning">Reset</button>
+      </div>
+    </div>
+    </footer>
+
+
+    <script type="module" src="app/main.js"></script>
+</body>
+
+</html>
